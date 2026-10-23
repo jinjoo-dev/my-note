@@ -1,3 +1,8 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// 최근 글 목록에서 404(Not Found) 페이지 숨기기
+.recent-notes li.recent-li:has(a[href$="/404"]) {
+  display: none;
+}
